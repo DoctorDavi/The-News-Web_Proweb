@@ -53,13 +53,15 @@ body {
 }
 
 .header__wrap-nav-side-logo {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   height: 46px;
 }
 
 .header__wrap-nav-side-logo-name {
   color: #000;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -74,6 +76,7 @@ body {
 .header__wrap-nav-list-item-link {
   color: #3a3838;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -94,25 +97,25 @@ body {
 }
 
 .banner__wrap-card {
-  width: 350px;
-  height: 380px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .banner__wrap-card_red {
   background: #b71c1c;
-}
+}  
 
 .banner__wrap-card_purple {
   background: #6a1b9a;
-}
+}  
 
 .banner__wrap-card_blue {
   background: #303f9f;
-}
+}  
 
 .banner__wrap-card_green {
   background: #00695c;
-}
+}  
 
 .banner__wrap-card-content {
   display: flex;
@@ -127,12 +130,13 @@ body {
 }
 
 .banner__wrap-card_padding2 {
-  padding: 15px 15px 8px;
+  padding: 8px 15px 8px;
 }
 
 .banner__wrap-card-content-title {
   color: #fff;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 19px;
 }
 
@@ -156,7 +160,12 @@ body {
 .news__wrap-title {
   color: #3a3838;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 22px;
+}
+
+.news__wrap-content_bg {
+  background: #ededed;
 }
 
 .news__wrap-content {
@@ -164,11 +173,10 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  height: 531px;
-}
+}  
 
-.news__wrap-content_bg {
-  background: #ededed;
+.news__wrap-content-img img {
+  height: 560px;
 }
 
 .news__wrap-content-desc {
@@ -184,6 +192,7 @@ body {
 .news__wrap-content-desc-title {
   color: #3a3838;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 22px;
 }
 
@@ -193,8 +202,8 @@ body {
   width: 540px;
 }
 
-.footer {
-  background: #3a3838;
+.footer__wrap {
+  background: #3a3838;  
 }
 
 .footer__wrap-nav {
@@ -219,6 +228,7 @@ body {
 .footer__wrap-nav-side-logo-name {
   color: #fff;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -233,6 +243,7 @@ body {
 .footer__wrap-nav-list-item-link {
   color: #fff;
   font-family: "Roboto-Bold";
+  font-weight: 700;
   font-size: 18px;
   transition: 0.3s linear;
 }
