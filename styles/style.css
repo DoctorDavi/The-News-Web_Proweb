@@ -10,6 +10,7 @@
 
 body {
   font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -27,12 +28,8 @@ body {
   margin: 0 auto;
 }
 
-.special-container {
-  max-width: 1400px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 145px 0 130px;
+.header {
+  padding: 20px 0 15px;
 }
 
 .header__wrap-nav {
@@ -41,31 +38,10 @@ body {
   align-items: center;
 }
 
-.header__wrap-nav-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 15px;
-  gap: 4px;
-}
-
-.header__wrap-nav-side-link {
-  width: 150px;
-  height: 46px;
-}
-
-.header__wrap-nav-side-link-name {
-  color: #000;
-  font-family: "Roboto-Bold", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-
 .header__wrap-nav-list {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 44px 0 42px;
 }
 
 .header__wrap-nav-list-item-link {
@@ -76,12 +52,7 @@ body {
 
 .header__wrap-nav-list-item-link:hover {
   color: #ef4423;
-  transition: 0.3s linear;
-}
-
-.header__wrap-img {
-  width: 1140px;
-  height: 272px;
+  transition: 0.3s;
 }
 
 .banner__wrap {
@@ -115,9 +86,8 @@ body {
   background: #00695c;
 }
 
-.banner__wrap-card-link {
-  width: 350px;
-  height: 175px;
+.banner__wrap-card-link img {
+  display: block;
 }
 
 .banner__wrap-card-content {
@@ -171,23 +141,15 @@ body {
 
 .news__wrap-content {
   display: flex;
-  align-items: center;
   gap: 30px;
-}
-
-.news__wrap-content-img {
-  width: 555px;
-  height: 531px;
 }
 
 .news__wrap-content-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  max-width: 540px;
-  width: 100%;
   padding: 20px 0 30px;
+  gap: 30px;
 }
 
 .news__wrap-content-desc-title {
@@ -203,6 +165,7 @@ body {
 
 .footer {
   background: #3a3838;
+  padding: 28px 0;
 }
 
 .footer__wrap-nav {
@@ -211,36 +174,17 @@ body {
   align-items: center;
 }
 
-.footer__wrap-nav-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.footer__wrap-nav-side-link {
-  width: 150px;
-  height: 46px;
-}
-
-.footer__wrap-nav-side-link-name {
-  color: #fff;
-  font-family: "Roboto-Bold", sans-serif;
-  font-size: 18px;
-}
-
 .footer__wrap-nav-list {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 54px 0 54px;
 }
 
 .footer__wrap-nav-list-item-link {
   color: #fff;
   font-family: "Roboto-Bold", sans-serif;
   font-size: 18px;
-  transition: 0.3s linear;
+  transition: 0.3s;
 }
 
 .footer__wrap-nav-list-item-link:hover {
