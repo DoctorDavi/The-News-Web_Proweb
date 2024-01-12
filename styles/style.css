@@ -35,6 +35,7 @@ body {
 .header__wrap-nav {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
@@ -42,6 +43,8 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header__wrap-nav-list-item-link {
@@ -55,10 +58,15 @@ body {
   transition: 0.3s;
 }
 
+.big-img__pic {
+  max-width: 100%;
+}
+
 .banner__wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .banner__wrap-card {
@@ -86,8 +94,9 @@ body {
   background: #00695c;
 }
 
-.banner__wrap-card-link img {
-  display: block;
+.banner__wrap-card-link-img {
+  display: flex;
+  max-width: 100%;
 }
 
 .banner__wrap-card-content {
@@ -141,10 +150,18 @@ body {
 
 .news__wrap-content {
   display: flex;
-  gap: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news__wrap-content-img {
+  max-width: 100%;
 }
 
 .news__wrap-content-desc {
+  max-width: 535px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,6 +188,7 @@ body {
 .footer__wrap-nav {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
@@ -178,6 +196,8 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__wrap-nav-list-item-link {
@@ -189,4 +209,33 @@ body {
 
 .footer__wrap-nav-list-item-link:hover {
   color: #ef4423;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__wrap-nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header__wrap-nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .banner__wrap-card:nth-child(2) .banner__wrap-card-link,
+  .banner__wrap-card:nth-child(4) .banner__wrap-card-link {
+    order: -1;
+  }
+
+  .banner__wrap-card:nth-child(2),
+  .banner__wrap-card:nth-child(4) {
+    gap: 0;
+  }
+
+  .banner__wrap-card-content2,
+  .banner__wrap-card-content4 {
+    padding-bottom: 8px;
+  }
 }
