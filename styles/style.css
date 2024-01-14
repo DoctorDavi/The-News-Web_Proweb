@@ -239,3 +239,9 @@ body {
     padding-bottom: 8px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .news__wrap-content-desc-text {
+    font-size: 14px;
+  }
+}
